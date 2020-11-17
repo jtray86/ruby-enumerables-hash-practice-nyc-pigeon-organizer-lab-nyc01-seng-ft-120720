@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
           
       end
       final_array[name][key].push(color_key)
-      binding.pry
+      
     end 
   end
   end   
