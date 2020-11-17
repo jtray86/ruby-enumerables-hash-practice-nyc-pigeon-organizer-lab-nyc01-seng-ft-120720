@@ -5,9 +5,14 @@ def nyc_pigeon_organizer(data)
     value.each do |color_key, names| 
      names.each do |name
       if !final_array[name]
+          final_array[name]={}
       end
+      if !final_array[name][key]
+          final_array[name][key]={}
+      end
+      final_array[name][key].push(color_key)
     end 
   end
-end   
+  end   
   
 end
